@@ -22,6 +22,8 @@ use Yii;
  */
 class PostsModel extends BaseModel
 {
+    const  IS_VALID = "1" ;//文章发布
+    const  NO_VALID = '0';//文章不发布
     /**
      * @inheritdoc
      */
@@ -62,4 +64,8 @@ class PostsModel extends BaseModel
             'updated_at' => Yii::t('app', 'Updated At'),
         ];
     }
+
+
+
+
 }
